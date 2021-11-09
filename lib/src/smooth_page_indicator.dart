@@ -5,12 +5,13 @@ import 'package:flutter/rendering.dart';
 import 'effects/indicator_effect.dart';
 import 'effects/worm_effect.dart';
 import 'painters/indicator_painter.dart';
+import 'package:preload_page_view/preload_page_view.dart';
 
 typedef OnDotClicked = void Function(int index);
 
 class SmoothPageIndicator extends AnimatedWidget {
   // Page view controller
-  final PageController controller;
+  final PreloadPageController controller;
 
   /// Holds effect configuration to be used in the [BasicIndicatorPainter]
   final IndicatorEffect effect;
